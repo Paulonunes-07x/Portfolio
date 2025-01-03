@@ -1,0 +1,427 @@
+/*estilo geral*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+body {
+    background-color: #000;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn-contanto a button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #0444BF;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 2s;
+}
+
+button:hover,
+form .btn-enviar input:hover {
+    background-color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 0 50px rgba(2, 40, 110, 0.3);
+}
+
+h2.titulo {
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+    font-weight: 1000px;
+}
+
+h2.titulo span {
+    color: #0aaff1;
+}
+
+/*---CABEÇALHO---*/
+header {
+    color: white;
+    padding: 1rem 2rem;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+.menu-desktop ul {
+    list-style: none;
+    display: flex;
+    gap: 5em;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-desktop ul li a {
+    text-decoration: none;
+    color: #0aaff1;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu-desktop ul li a:hover {
+    color: #A79674;
+}
+
+/*---ESTILO DO TOPO DO SITE---*/
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+.topo-do-site .img-do-topo img {
+    width: 400px;
+    height: auto;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site .txt-do-topo h1 {
+    color: #fff;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-do-topo h1 span {
+    color: #0444BF;
+}
+
+.topo-do-site .txt-do-topo p {
+    color: #fff;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 20px;
+    }
+}
+
+/* ESTILO DAS ESPECIALIDADES */
+section.especialidades {
+    padding: 40px 4%;
+}
+
+section.especialidades .flex {
+    gap: 60px;
+}
+
+.especialidades .especialidades-box {
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 40px;
+    transition: .2s;
+}
+
+.especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 12px#ffffff85;
+}
+
+.especialidades .especialidades-box i {
+    font-size: 68px;
+    color: #0584f2;
+}
+
+.especialidades .especialidades-box h3 {
+    font-size: 28px;
+}
+
+/* ESTILO DO SOBRE  */
+section.sobre {
+    padding: 80px 4%;
+}
+
+section.sobre flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.img-sobre {
+    width: 200px;
+    height: auto;
+}
+
+.sobre .txt-sobre {
+    color: #fff;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.sobre .txt-sobre h2 span {
+    color: #0584f2;
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.btn-social button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 0;
+    background-color: #0aaff1;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 4px 5px;
+}
+
+/* ESTILO DO PORTFOLIO */
+section.portfolio {
+    padding: 80px 4%;
+    box-shadow: 0 0 20px 10px #ffffff4f;
+}
+
+section.portfolio .flex {
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-portf {
+    background-color: #f6f9ff;
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 9s;
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+}
+
+.img-portf:hover {
+    background-position: 100% 100%;
+}
+
+.orvelary {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000b1;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 1000px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.orvelary:hover {
+    opacity: 1;
+}
+
+/* ESTILO DO FORMULARIO CONTANTO */
+section.formulario {
+    padding: 80px 4%;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    background-color: #4340407d;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+form textarea {
+    resize: none;
+    height: 150px;
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+}
+
+form .btn-enviar input[type=submit] {
+    background-color: #0444BF;
+    color: #000;
+    cursor: pointer;
+    transition: 1.5s;
+}
+
+/* ESTILO DO FOOTER */
+footer {
+    width: 100%;
+    padding: 20px 4%;
+    box-shadow: 0 0 20px 10px #ffffff4f;
+}
+
+footer .line-footer {
+    padding: 10px 0;
+    justify-content: space-between;
+}
+
+footer .line-footer .flex {
+    justify-content: space-between;    /* Empurra os elementos para os extremos */
+    align-items: center;
+}
+
+.borda {
+    border-top: 2px solid #0444BF;
+}
+
+footer .line-footer p {
+    color: #0444BF;
+    font-size: 20px;
+}
+
+footer .line-footer p i {
+    color: #0444BF;
+    font-size: 18px;
+
+}
+
+footer .line-footer p a {
+    color: #fff;
+}
+
+.logo-footer img {
+    max-height: 50px;
+    width: auto;
+}
+@media screen and (max-width: 1210px) {
+    /* ESTILO DO PORTFOLIO */
+    section.portfolio .flex {
+        gap: 20px;
+    }
+}
+@media screen and (max-width: 1020px) {
+
+    /* CLASSES GERAIS */
+    .flex {
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex {
+        flex-direction: column-reverse;
+    }
+    h2.titulo {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    /* CABEÇALHO */
+    .menu-desktop,
+    .btn-contanto {
+        display: none;
+    }
+
+    /* TOPO DO SITE */
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    section.topo-do-site .flex {
+        gap: 40px;
+    }
+
+    .topo-do-site .txt-do-topo h1 {
+        font-size: 30px;
+    }
+
+    .topo-do-site .img-do-topo img {
+        width: 250px;
+        height: auto;
+    }
+
+    /* ESTILO DAS ESPECIALIDADES */
+    section.especialidades {
+        padding: 40px 8%;
+    }
+    /* ESTILO DO SOBRE  */
+    section.sobre {
+        padding: 80px 8%;
+    }
+    .sobre .txt-sobre h2 {
+        font-size: 34px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .btn-social{
+        text-align: center;
+    }
+    /* ESTILO DO PORTFOLIO */
+    section.portfolio {
+        padding: 80px 8%;
+        transition: none;
+    }
+    section.portfolio .flex {
+        gap: 20px;
+    }
+    .img-portf {
+        background-color: #f6f9ff;
+        width: 100%;
+        margin: 0 auto;
+        max-width: 360px;
+    }
+    /* ESTILO DO FORMULARIO CONTANTO */
+    footer .flex {
+        flex-direction: column;
+    }
+    footer .line-footer p {
+        text-align: center;
+    }
+}
