@@ -178,12 +178,13 @@ section.topo-do-site .flex {
 
 .topo-do-site .txt-do-topo h1 {
     color: #fff;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 40px;
 }
 
 .topo-do-site .txt-do-topo h1 span {
     color: #0444BF;
+
 }
 
 .topo-do-site .txt-do-topo p {
@@ -291,11 +292,11 @@ section.portfolio .flex {
 
 .img-portf {
     background-color: #f6f9ff;
-    width: 360px;
-    height: 460px;
+    width: 300px;
+    height: 320px;
     background-size: cover;
     background-position: 100% 0%;
-    transition: 9s;
+    transition: .9s;
     cursor: pointer;
     border-radius: 10px;
     position: relative;
@@ -382,7 +383,7 @@ footer .line-footer {
 }
 
 footer .line-footer .flex {
-    justify-content: space-between;    /* Empurra os elementos para os extremos */
+    justify-content: space-between;   
     align-items: center;
 }
 
@@ -409,12 +410,7 @@ footer .line-footer p a {
     max-height: 50px;
     width: auto;
 }
-@media screen and (max-width: 1010px) {
-    /* ESTILO DO PORTFOLIO */
-    section.portfolio .flex {
-        gap: 20px;
-    }
-}
+
 @media screen and (max-width: 1020px) {
 
     /* CLASSES GERAIS */
